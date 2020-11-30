@@ -1,30 +1,43 @@
+//https://codeforces.com/contest/1206/problem/B
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
+#define int long long
+signed main(){
     cin.tie(nullptr)->sync_with_stdio(false);
 
     int n;cin>>n;
     int count = 0;
-    int negcount = 0;
+    int negCount = 0;
+    int zeroCount = 0;
 
-    bool zero = false;
-    for(int i =1;i<=n;i++){
+
+    for(int i=1;i<=n;i++){
         int x; cin>>x;
 
-        if(x>=1) count+=(x-1);
-        else if(x<=-1){
+        if(x>1)count+=(x-1);
+        if(x<=-1){
             count+=(-1-x);
-            negcount++;
+            negCount++;
+        }
+        if(x==0){
+            zeroCount++;
+        }
+    }
+    if(zeroCount==0){
+        if(negCount%2==0){
+            cout<<count;
+            return 0;
         }
         else{
-            zero = true;
-            count++;
+            cout<<count+2;
+            return 0;
         }
-
     }
-    if(zero)cout<<count;
-    else if(negcount%2==0)cout<<count;
-    else if(negcount%2==1)cout<<count+2;
+    else{
+        cout<<count+ (zeroCount);
+    }
+   
+    
     
 
 
