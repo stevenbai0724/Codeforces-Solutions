@@ -7,7 +7,7 @@ signed main(){
 
     int t; cin>>t;
     while(t--){
-        double n, x;
+        int n, x;
         cin>>n>>x;
         int sum = 0;
         int hi = 0;
@@ -16,13 +16,13 @@ signed main(){
         for(int i=1;i<=n;i++){
             cin>>arr[i];
             sum+=arr[i];
+            if(arr[i]%x==0)hi+=arr[i]/x;
+            else hi+=arr[i]/x +1;
         }
-        for(int i=1;i<=n;i++){
-            double num = arr[i];
-            hi += ceil(num/x);
-        }
-        cout<<ceil(sum/x)<<" "<<hi<<"\n";
+        if(sum%x==0)sum/=x;
+        else sum = sum/x + 1;
 
+        cout<<sum<<" "<<hi<<"\n";
     }
 
     return 0;
