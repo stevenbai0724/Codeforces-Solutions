@@ -38,9 +38,5 @@ signed main(){
     for(int i=0;i<s2.size();i++){
         cout<<s2[i]<<" ";
     }
-    
-
-    
-
     return 0;
 }

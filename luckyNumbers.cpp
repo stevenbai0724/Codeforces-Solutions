@@ -7,8 +7,6 @@ signed main(){
     
     vector<int>arr(56);
     arr[1] = 2;
-
-
     for(int i=2;i<=55;i++){
         arr[i] = (arr[i-1]-arr[i-2])*2 + arr[i-1];
     }

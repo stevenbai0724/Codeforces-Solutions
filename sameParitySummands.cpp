@@ -1,4 +1,3 @@
-//https://codeforces.com/problemset/problem/1352/B
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
@@ -6,7 +5,7 @@ int main(){
 
     int t; cin>>t;
     
-    for(int n = 0; n<t; n++){
+    for(int nigs = 0; nigs<t; nigs++){
 
         int x,y;
         cin>>x>>y;

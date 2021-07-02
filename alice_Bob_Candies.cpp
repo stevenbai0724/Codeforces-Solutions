@@ -1,4 +1,3 @@
-//https://codeforces.com/contest/1352/problem/D
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
