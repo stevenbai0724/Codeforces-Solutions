@@ -8,7 +8,7 @@ bool comp(int a, int b){
    return(a>=b);
 }
 signed main(){
-  
+    cin.tie(nullptr)->sync_with_stdio(false);
 
     int t; cin>>t;
 
