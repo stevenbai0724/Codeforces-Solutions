@@ -39,13 +39,7 @@ signed main(){
 
         }
         cout<<0<<"\n";
-        nxt:;
-
-        
-
-
-        
-     
+        nxt:;     
     }
 
     return 0;   
