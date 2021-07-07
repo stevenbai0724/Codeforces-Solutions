@@ -48,9 +48,12 @@ signed main(){
 
 
         ans += (cnt1 * cnt2);
+    
 
     }
     cout<<ans<<"\n";
+
+
 
     return 0;
 }
