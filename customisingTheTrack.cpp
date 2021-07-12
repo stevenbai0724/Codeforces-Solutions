@@ -17,7 +17,7 @@ signed main(){
             sum+=x;
 
         }
-        cout<<(sum%n)*(n - (sum%n))<<"\n";
+        cout<<(sum%n)*(n - (sum%n))<<"\n";  
 
 
     } 
