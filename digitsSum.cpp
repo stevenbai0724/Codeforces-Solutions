@@ -12,7 +12,6 @@ signed main(){
         int x; cin>>x;
         cout<<(x+1)/10<<"\n";
 
-
     }
 
 
