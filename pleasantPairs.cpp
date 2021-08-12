@@ -23,7 +23,7 @@ signed main(){
             for(int j=i+1;j<=n;j++){
                 if(arr[j].first*arr[i].first>(2*n))break;
                 if(arr[i].first*arr[j].first == arr[i].second + arr[j].second)ans++;
-            }
+            }   
         }
         cout<<ans<<"\n";
         
