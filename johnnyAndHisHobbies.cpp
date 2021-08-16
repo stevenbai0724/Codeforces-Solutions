@@ -32,10 +32,7 @@ signed main(){
         }
         cout<<-1<<"\n";
         nxt:;
-
-
     }
-
 
     return 0;
 }
