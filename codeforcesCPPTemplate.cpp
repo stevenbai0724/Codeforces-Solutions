@@ -9,7 +9,7 @@ signed main(){
     int t; cin>>t;
 
     while(t--){
-        cout<<0%1<<"\n";
+       
     }
 
 
